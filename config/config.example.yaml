@@ -1,0 +1,65 @@
+# World Engine Configuration Example
+# Copy this file to config.yaml and customize for your environment
+
+engine:
+  name: "my-world-engine"
+  version: "1.0.0"
+  log_level: "INFO"
+
+layers:
+  cognitive:
+    enabled: true
+    modules:
+      - name: cognitive_layer
+        config:
+          # Add cognitive layer specific config here
+  
+  mobile:
+    enabled: false
+    modules:
+      - name: mobile_layer
+        config:
+          # Add mobile layer specific config here
+  
+  host:
+    enabled: true
+    modules:
+      - name: host_layer
+        config:
+          # Add host layer specific config here
+
+# Network configuration (user-defined)
+network:
+  protocol: "tcp"
+  host: "localhost"
+  port: 8080
+  timeout: 30
+
+# Compute resources (user-defined)
+compute:
+  type: "local"  # local, cloud, edge, hybrid
+  cpu_limit: 4
+  memory_limit: "4GB"
+  gpu_enabled: false
+
+# Storage configuration (user-defined)
+storage:
+  type: "local"  # local, s3, gcs, azure
+  path: "./data"
+  
+# Logging configuration
+logging:
+  level: "INFO"
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  file: "./logs/world_engine.log"
+  max_size: "10MB"
+  backup_count: 5
+
+# Security configuration (user-defined)
+security:
+  authentication_enabled: false
+  encryption_enabled: false
+  
+# Module-specific configurations
+modules:
+  # Add custom module configurations here

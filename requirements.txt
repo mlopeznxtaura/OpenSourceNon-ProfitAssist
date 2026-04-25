@@ -1,0 +1,12 @@
+# Core dependencies
+# World Engine has minimal core dependencies
+
+# GUI dependencies (optional)
+# tkinter is included with most Python installations
+
+# Development dependencies
+pytest>=7.0.0
+pytest-cov>=4.0.0
+black>=23.0.0
+flake8>=6.0.0
+mypy>=1.0.0
