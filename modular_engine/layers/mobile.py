@@ -1,6 +1,6 @@
 """Mobile Layer - Mobility, navigation, and spatial awareness."""
 from typing import Any, Dict, List, Optional
-from world_engine.core.base import ModuleBase, Layer
+from modular_engine.core.base import ModuleBase, Layer
 
 
 class MobileLayer(ModuleBase):

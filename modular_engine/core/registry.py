@@ -1,6 +1,6 @@
 """Module Registry - Manages module registration and discovery."""
 from typing import Dict, List, Optional, Type
-from world_engine.core.base import ModuleBase, Layer
+from modular_engine.core.base import ModuleBase, Layer
 
 
 class ModuleRegistry:

@@ -1,6 +1,6 @@
-# Modular Cognitive Engine
+# Modular Engine
 
-A modular, open-source cognitive engine designed for enterprise and individual deployment. This engine provides a flexible architecture for building distributed intelligent systems that can adapt to any environment, network topology, or compute infrastructure.
+A modular, open-source engine designed for enterprise and individual deployment. This engine provides a flexible architecture for building distributed intelligent systems that can adapt to any environment, network topology, or compute infrastructure.
 
 ## 🚀 Features
 
@@ -22,8 +22,8 @@ A modular, open-source cognitive engine designed for enterprise and individual d
 ### Basic Installation
 
 ```bash
-git clone https://github.com/your-org/world-engine.git
-cd world-engine
+git clone https://github.com/your-org/modular-engine.git
+cd modular-engine
 pip install -e .
 ```
 
@@ -66,7 +66,7 @@ Example configuration file (`config.yaml`):
 
 ```yaml
 engine:
-  name: "my-cognitive-engine"
+  name: "my-modular-engine"
   version: "1.0.0"
   
 layers:
@@ -98,8 +98,8 @@ logging:
 ### Basic Example
 
 ```python
-from cognitive_engine import Engine
-from cognitive_engine.modules import CognitiveModule, HostModule
+from modular_engine import Engine
+from modular_engine.modules import CognitiveModule, HostModule
 
 # Initialize engine
 engine = Engine(config_path="config.yaml")
@@ -125,13 +125,13 @@ engine.shutdown()
 Launch the graphical interface:
 
 ```bash
-cognitive-engine-gui
+modular-engine-gui
 ```
 
 Or programmatically:
 
 ```python
-from cognitive_engine.gui import launch_gui
+from modular_engine.gui import launch_gui
 
 launch_gui(engine)
 ```
@@ -141,7 +141,7 @@ launch_gui(engine)
 Create custom modules by inheriting from `ModuleBase`:
 
 ```python
-from cognitive_engine.core.base import ModuleBase, Layer
+from modular_engine.core.base import ModuleBase, Layer
 
 class MyCustomModule(ModuleBase):
     name = "my_custom_module"
@@ -166,8 +166,8 @@ class MyCustomModule(ModuleBase):
 ## 📁 Project Structure
 
 ```
-cognitive-engine/
-├── cognitive_engine/
+modular-engine/
+├── modular_engine/
 │   ├── __init__.py
 │   ├── core/
 │   │   ├── __init__.py
@@ -215,7 +215,7 @@ pytest tests/
 With coverage:
 
 ```bash
-pytest tests/ --cov=world_engine
+pytest tests/ --cov=modular_engine
 ```
 
 ## 🤝 Contributing
@@ -240,9 +240,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Support
 
-- **Documentation**: https://cognitive-engine.readthedocs.io
-- **Issues**: https://github.com/your-org/cognitive-engine/issues
-- **Discussions**: https://github.com/your-org/cognitive-engine/discussions
+- **Documentation**: https://modular-engine.readthedocs.io
+- **Issues**: https://github.com/your-org/modular-engine/issues
+- **Discussions**: https://github.com/your-org/modular-engine/discussions
 
 ## 🌟 Roadmap
 

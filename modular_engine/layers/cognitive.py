@@ -1,6 +1,6 @@
 """Cognitive Layer - High-level reasoning and decision making."""
 from typing import Any, Dict, Optional
-from world_engine.core.base import ModuleBase, Layer
+from modular_engine.core.base import ModuleBase, Layer
 
 
 class CognitiveLayer(ModuleBase):

@@ -1,8 +1,8 @@
 """Main Engine Class - Orchestrates all modules and layers."""
 import logging
 from typing import Any, Dict, List, Optional
-from world_engine.core.base import ModuleBase, Layer
-from world_engine.core.registry import ModuleRegistry
+from modular_engine.core.base import ModuleBase, Layer
+from modular_engine.core.registry import ModuleRegistry
 
 
 logger = logging.getLogger(__name__)

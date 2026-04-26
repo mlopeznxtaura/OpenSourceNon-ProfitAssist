@@ -1,4 +1,4 @@
-"""Modular Cognitive Engine GUI Application."""
+"""Modular Engine GUI Application."""
 import logging
 from typing import Any, Dict, Optional
 
@@ -9,14 +9,14 @@ try:
 except ImportError:
     TK_AVAILABLE = False
 
-from cognitive_engine.core.engine import Engine
+from modular_engine.core.engine import Engine
 
 
 logger = logging.getLogger(__name__)
 
 
-class CognitiveEngineGUI:
-    """Graphical User Interface for Modular Cognitive Engine.
+class ModularEngineGUI:
+    """Graphical User Interface for Modular Engine.
     
     Provides a visual interface for:
     - Monitoring engine status
@@ -47,7 +47,7 @@ class CognitiveEngineGUI:
     def launch(self) -> None:
         """Launch the GUI application."""
         self._root = tk.Tk()
-        self._root.title("Cognitive Engine Control Panel")
+        self._root.title("Modular Engine Control Panel")
         self._root.geometry("1000x700")
         
         self._setup_ui()
@@ -71,7 +71,7 @@ class CognitiveEngineGUI:
         # Title
         title_label = ttk.Label(
             main_frame, 
-            text="Cognitive Engine Control Panel",
+            text="Modular Engine Control Panel",
             font=("Helvetica", 16, "bold")
         )
         title_label.grid(row=0, column=0, pady=(0, 10))
@@ -253,5 +253,5 @@ def launch_gui(engine: Optional[Engine] = None) -> None:
     Args:
         engine: Optional engine instance to control
     """
-    gui = CognitiveEngineGUI(engine)
+    gui = ModularEngineGUI(engine)
     gui.launch()

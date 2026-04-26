@@ -2,7 +2,7 @@
 import os
 import platform
 from typing import Any, Dict, List, Optional
-from world_engine.core.base import ModuleBase, Layer
+from modular_engine.core.base import ModuleBase, Layer
 
 
 class HostLayer(ModuleBase):

@@ -1,4 +1,4 @@
-"""Setup configuration for Modular Cognitive Engine."""
+"""Setup configuration for Modular Engine."""
 
 from setuptools import setup, find_packages
 
@@ -6,14 +6,14 @@ with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setup(
-    name="cognitive-engine",
+    name="modular-engine",
     version="1.0.0",
-    author="Cognitive Engine Contributors",
-    author_email="contributors@cognitiveengine.dev",
-    description="A modular cognitive engine for distributed intelligent systems",
+    author="Modular Engine Contributors",
+    author_email="contributors@modularenge.dev",
+    description="A modular engine for distributed intelligent systems",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/your-org/cognitive-engine",
+    url="https://github.com/your-org/modular-engine",
     packages=find_packages(),
     classifiers=[
         "Development Status :: 4 - Beta",
@@ -54,7 +54,7 @@ setup(
     },
     entry_points={
         "console_scripts": [
-            "cognitive-engine-gui=cognitive_engine.gui.app:launch_gui",
+            "modular-engine-gui=modular_engine.gui.app:launch_gui",
         ],
     },
 )
